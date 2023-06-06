@@ -28,7 +28,7 @@ namespace Chess
                 DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
                 imageColumn.HeaderText = alphabet[i].ToString();
                 imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-                imageColumn.Name = "Column" + (i + 1);
+                imageColumn.Name = i.ToString();
 
                 this.chessBoard.Columns.Add(imageColumn);
             }
@@ -53,7 +53,8 @@ namespace Chess
 
             for ( int i = 0;i < numberOfColumns; i++)
             {
-                this.chessBoard.Rows[1].Cells[alphabet[i].ToString()].Value = Image.FromFile()
+                this.chessBoard.Rows[1].Cells[i].Value = Image.FromFile("Piece PNGs\\BlackPawn.png");
+                this.chessBoard.Rows[6].Cells[i].Value = Image.FromFile("Piece PNGs\\WhitePawn.png");
             }
 
             this.chessBoard.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

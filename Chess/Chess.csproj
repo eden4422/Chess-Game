@@ -24,18 +24,42 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="Piece PNGs\BlackBishop.png" />
-    <AdditionalFiles Include="Piece PNGs\BlackKing.png" />
-    <AdditionalFiles Include="Piece PNGs\BlackKnight.png" />
-    <AdditionalFiles Include="Piece PNGs\BlackPawn.png" />
-    <AdditionalFiles Include="Piece PNGs\BlackQueen.png" />
-    <AdditionalFiles Include="Piece PNGs\BlackRook.png" />
-    <AdditionalFiles Include="Piece PNGs\WhiteBishop.png" />
-    <AdditionalFiles Include="Piece PNGs\WhiteKing.png" />
-    <AdditionalFiles Include="Piece PNGs\WhiteKnight.png" />
-    <AdditionalFiles Include="Piece PNGs\WhitePawn.png" />
-    <AdditionalFiles Include="Piece PNGs\WhiteQueen.png" />
-    <AdditionalFiles Include="Piece PNGs\WhiteRook.png" />
+    <AdditionalFiles Include="Piece PNGs\BlackBishop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\BlackKing.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\BlackKnight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\BlackPawn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\BlackQueen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\BlackRook.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\WhiteBishop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\WhiteKing.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\WhiteKnight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\WhitePawn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\WhiteQueen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="Piece PNGs\WhiteRook.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
   </ItemGroup>
 
 </Project>
