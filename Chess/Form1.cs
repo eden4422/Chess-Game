@@ -21,11 +21,11 @@ namespace Chess
             string alphabet = "ABCDEFGH";
             int numberOfRows = 8;
             int numberOfColumns = 8;
+            DataGridViewCell dataGridViewCell;
 
 
             foreach (char column in alphabet)
             {
-                numberOfColumns++;
                 this.chessBoard.Columns.Add(column.ToString(), column.ToString());
             }
 
@@ -35,7 +35,17 @@ namespace Chess
                 this.chessBoard.Rows[i].HeaderCell.Value = (i + 1).ToString();
             }
 
-            for (int i = 0;i <numberOfColumns)
+            for (int i = 0;i <numberOfColumns; i++)
+            {
+                for (int j = 0; j < numberOfRows; j++) 
+                {
+                    if ((i % 2 == 0 && j % 2 == 1) || (i % 2 == 1 && j % 2 == 0))
+                    {
+                        dataGridViewCell = this.chessBoard[i,j];
+                        dataGridViewCell.Style.BackColor = Color.RosyBrown;
+                    }
+                }
+            }
 
             this.chessBoard.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             this.chessBoard.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
