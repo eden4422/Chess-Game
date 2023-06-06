@@ -23,10 +23,14 @@ namespace Chess
             int numberOfColumns = 8;
             DataGridViewCell dataGridViewCell;
 
-
-            foreach (char column in alphabet)
+            for (int i = 0; i < numberOfColumns; i++)
             {
-                this.chessBoard.Columns.Add(column.ToString(), column.ToString());
+                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
+                imageColumn.HeaderText = alphabet[i].ToString();
+                imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                imageColumn.Name = "Column" + (i + 1);
+
+                this.chessBoard.Columns.Add(imageColumn);
             }
 
             this.chessBoard.Rows.Add(numberOfRows);
@@ -35,16 +39,21 @@ namespace Chess
                 this.chessBoard.Rows[i].HeaderCell.Value = (i + 1).ToString();
             }
 
-            for (int i = 0;i <numberOfColumns; i++)
+            for (int i = 0; i < numberOfColumns; i++)
             {
-                for (int j = 0; j < numberOfRows; j++) 
+                for (int j = 0; j < numberOfRows; j++)
                 {
                     if ((i % 2 == 0 && j % 2 == 1) || (i % 2 == 1 && j % 2 == 0))
                     {
-                        dataGridViewCell = this.chessBoard[i,j];
+                        dataGridViewCell = this.chessBoard[i, j];
                         dataGridViewCell.Style.BackColor = Color.RosyBrown;
                     }
                 }
+            }
+
+            for ( int i = 0;i < numberOfColumns; i++)
+            {
+                this.chessBoard.Rows[1].Cells[alphabet[i].ToString()].Value = Image.FromFile()
             }
 
             this.chessBoard.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

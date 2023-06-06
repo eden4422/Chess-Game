@@ -8,4 +8,34 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Piece PNGs\BlackBishop.png" />
+    <None Remove="Piece PNGs\BlackKing.png" />
+    <None Remove="Piece PNGs\BlackKnight.png" />
+    <None Remove="Piece PNGs\BlackPawn.png" />
+    <None Remove="Piece PNGs\BlackQueen.png" />
+    <None Remove="Piece PNGs\BlackRook.png" />
+    <None Remove="Piece PNGs\WhiteBishop.png" />
+    <None Remove="Piece PNGs\WhiteKing.png" />
+    <None Remove="Piece PNGs\WhiteKnight.png" />
+    <None Remove="Piece PNGs\WhitePawn.png" />
+    <None Remove="Piece PNGs\WhiteQueen.png" />
+    <None Remove="Piece PNGs\WhiteRook.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Piece PNGs\BlackBishop.png" />
+    <AdditionalFiles Include="Piece PNGs\BlackKing.png" />
+    <AdditionalFiles Include="Piece PNGs\BlackKnight.png" />
+    <AdditionalFiles Include="Piece PNGs\BlackPawn.png" />
+    <AdditionalFiles Include="Piece PNGs\BlackQueen.png" />
+    <AdditionalFiles Include="Piece PNGs\BlackRook.png" />
+    <AdditionalFiles Include="Piece PNGs\WhiteBishop.png" />
+    <AdditionalFiles Include="Piece PNGs\WhiteKing.png" />
+    <AdditionalFiles Include="Piece PNGs\WhiteKnight.png" />
+    <AdditionalFiles Include="Piece PNGs\WhitePawn.png" />
+    <AdditionalFiles Include="Piece PNGs\WhiteQueen.png" />
+    <AdditionalFiles Include="Piece PNGs\WhiteRook.png" />
+  </ItemGroup>
+
 </Project>
