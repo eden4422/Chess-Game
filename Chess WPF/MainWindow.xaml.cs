@@ -12,6 +12,11 @@ namespace Chess_WPF
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Switches 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Human_Locally_Button_Click(object sender, RoutedEventArgs e)
         {
             ChessBoardWindow chessBoardWindow = new ChessBoardWindow();
