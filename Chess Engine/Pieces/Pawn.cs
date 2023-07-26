@@ -9,6 +9,9 @@ namespace Chess_Engine.Pieces
     /// </summary>
     internal class Pawn : ChessPiece
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Pawn"/> class.
+        /// </summary>
         public Pawn()
         {
             this.Vanished = false;
@@ -16,14 +19,14 @@ namespace Chess_Engine.Pieces
             this.HorizontalMovement = 0;
         }
 
-        public override void Movement()
-        {
-
-        }
-
         public override void Capturing()
         {
-            
+            throw new System.NotImplementedException();
+        }
+
+        public override void Movement()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

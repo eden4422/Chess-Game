@@ -30,6 +30,16 @@ namespace Chess_Engine
         public int VerticalMovement { get; set; }
 
         /// <summary>
+        /// Gets or sets the foward diagonal movement of the piece.
+        /// </summary>
+        public int FowardDiagonalMovement { get; set; }
+
+        /// <summary>
+        /// Gets or sets the backward diagonal movement of a piece.
+        /// </summary>
+        public int BackwardDiagonalMovement { get; set; }
+
+        /// <summary>
         /// Abstract movement class for chess piece.
         /// </summary>
         public abstract void Movement();

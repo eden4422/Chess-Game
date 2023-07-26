@@ -1,22 +1,20 @@
-﻿// <copyright file="Bishop.cs" company="Carlos Romero Sanchez">
+﻿// <copyright file="Kight.cs" company="Carlos Romero Sanchez">
 // Copyright (c) Carlos Romero Sanchez. All rights reserved.
 // </copyright>
 
 namespace Chess_Engine.Pieces
 {
     /// <summary>
-    /// Inherets from ChessPiece class to create a bishop.
+    /// Inherets from ChessPiece class to create a knight.
     /// </summary>
-    internal class Bishop : ChessPiece
+    internal class Knight : ChessPiece
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Bishop"/> class.
+        /// Initializes a new instance of the <see cref="Knight"/> class.
         /// </summary>
-        public Bishop()
+        public Knight()
         {
-            this.Vanished = false;
-            this.BackwardDiagonalMovement = 7;
-            this.FowardDiagonalMovement = 7;
+
         }
 
         public override void Capturing()
