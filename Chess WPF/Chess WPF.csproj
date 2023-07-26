@@ -22,6 +22,7 @@
     <None Remove="Piece PNGs\WhitePawn.png" />
     <None Remove="Piece PNGs\WhiteQueen.png" />
     <None Remove="Piece PNGs\WhiteRook.png" />
+    <None Remove="stylecop.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +39,14 @@
     <AdditionalFiles Include="Piece PNGs\WhitePawn.png" />
     <AdditionalFiles Include="Piece PNGs\WhiteQueen.png" />
     <AdditionalFiles Include="Piece PNGs\WhiteRook.png" />
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
